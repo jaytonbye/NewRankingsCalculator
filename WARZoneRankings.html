@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styleForRankings.css" />
+  </head>
+  <body>
+    <div class="mb-0">
+      <div
+        class="d-flex flex-xs-wrap flex-sm-wrap flex-md-nowrap justify-content-center"
+        style="
+          background-color: hsl(0, 100%, 56%);
+          border-bottom: solid black 2.5px;
+        "
+      >
+        <img class="header-img-1" src="WAR Zone Logo 180 by 180.jpg" alt="" />
+        <div class="header-text">
+          <h2 class="text text-center" style="text-decoration: underline">
+            Welcome to the WAR Zone Rankings Calculator (beta)
+          </h2>
+        </div>
+        <img class="header-img-2" src="WAR Zone Logo 180 by 180.jpg" alt="" />
+      </div>
+    </div>
+
+    <section class="">
+      <div class="background-image">
+        <div class="cointaining-div d-inline-block">
+          <table class="inputs">
+            <tr>
+              <td>
+                <label for="wrestlerName"
+                  ><strong
+                    >Enter a wrestler's name to see their ranking:</strong
+                  ></label
+                >
+              </td>
+              <td>
+                <input
+                  list="wrestlers"
+                  name="browser"
+                  id="wrestlerName"
+                /><datalist id="wrestlers"> </datalist>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="weightPercent"
+                  >Include wrestlers who are heavier by this percent:</label
+                >
+              </td>
+              <td><input id="weightPercent" value="0" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="agePercent"
+                  >Include wrestlers who are older by this percent:</label
+                >
+              </td>
+              <td><input id="agePercent" value="0" /></td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  class="d-flex justify-content-center"
+                  href="https://www.wellruntournaments.com/"
+                >
+                  <h4
+                    class="well-run-link text text-center"
+                    style="text-decoration: underline"
+                    id="returnToWellRunTournaments"
+                  >
+                    Click here to return to wellruntournaments.com
+                  </h4>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <button id="theButton" class="btn btn-secondary btn-lg float-end">
+            Click to Calculate Rating
+          </button>
+        </div>
+      </div>
+      <div id="divForRankings">
+        <table id="Rankings" class="table">
+          <thead>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Weight</th>
+            <th>Age</th>
+            <th>WeightAdjustedRating</th>
+            <th>Team</th>
+          </thead>
+        </table>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script src="appForRankings.js"></script>
+  </body>
+</html>
