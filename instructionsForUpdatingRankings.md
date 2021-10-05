@@ -4,9 +4,9 @@ Follow these steps to update the rankings:
 
 2. Go to https://www.convertjson.com/html-table-to-json.htm and past the table, it will convert it into JSON.
 
-3. Paste the JSON into input.json, you can erase the previous data.
+3. Copy the JSON and then paste it into input.json, you can overwrite the previous data.
 
-4. Erase the first 2 wrestlers (Jason Layton and Hammer Johnson)
+4. Erase the first wrestler (Jason Layton)
 
 5. In the command line type: node parser.js This will update output.json
 
