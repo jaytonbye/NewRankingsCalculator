@@ -8,6 +8,8 @@ Follow these steps to update the rankings:
 
 4. Erase the first wrestler (Jason Layton)
 
-5. In the command line type: node parser.js This will update output.json
+5. In the command line type: node parser.js This will update output.jsonj
 
-6. That's it, good job.
+6. Change the "last updated date" in WARZoneRankings.html
+
+7. That's it, good job.
